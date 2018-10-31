@@ -4,6 +4,7 @@
 
 **Soal Pertama**
 
+
 **Alur Program**
 
 1. Deklarasi variable A,B,X,Y,sebagai variable input
@@ -16,30 +17,34 @@
 
 **Code Program**
 
-``c++
-
-#include<iosteam>
-
+```c++
+#include<iostream>
 using namespace std;
 
 int main(){
-    int A,B,X,Y;
-    cout << "Masukan Variable X =";cin >>A;
-    cout <<" Masukan Variable y =";cin >>B;
 
-    X = A;
-    Y = B;
-    if (X!=Y){
-       if(X < Y)
-         (X = X + A);
-       else
-	 (Y = Y + B);
+    int a,b,x,y;
+
+    cout << "masukan bilangan x: " ;
+    cin >> a;
+    cout << "masukan bilangan y: " ;
+    cin >> b;
+
+    x=a;
+    y=b;
+    if ( x != y ) {
+        if ( x < y )
+             { x = x + a; }
+            else
+            { y = y + b; }
 
     }
-  
-    cout << X;
 
-}
+
+    cout <<   x;
+
+            }
+
 
 ```
 *Soal Program**
